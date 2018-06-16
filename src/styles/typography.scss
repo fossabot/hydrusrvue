@@ -1,0 +1,13 @@
+a {
+  outline: none;
+}
+
+select,
+button {
+  text-transform: lowercase;
+}
+
+::selection {
+  background-color: $primary;
+  color: $white;
+}
