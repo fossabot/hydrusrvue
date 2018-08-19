@@ -1,0 +1,305 @@
+.frame {
+  background-color: $background;
+  border-radius: $radius;
+  padding: 1.5rem;
+
+  .input[disabled],
+  .textarea[disabled] {
+    border-color: $grey-lighter;
+  }
+}
+
+.dropdown {
+  &.suggestions {
+    display: block !important;
+  }
+
+  .dropdown-item {
+    &:focus {
+      background-color: $dropdown-item-hover-background-color;
+    }
+
+    .file-amount {
+      color: $grey-light;
+    }
+  }
+}
+
+.tags {
+  &.file-tags {
+    .tag {
+      background-color: $primary;
+      color: $white;
+      overflow-x: hidden;
+
+      span {
+        max-width: 100%;
+        overflow-x: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}
+
+.field {
+  &.sorting-field {
+    input {
+      cursor: pointer;
+    }
+  }
+}
+
+.quickview {
+  .quickview-header {
+    .title {
+      font-weight: 600;
+    }
+  }
+
+  .quickview-body {
+    padding: 1rem;
+  }
+}
+
+.quickview-blocker {
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 34;
+}
+
+.panel {
+  &.namespace-sorting {
+    background-color: $white;
+
+    .panel-heading {
+      border-bottom: 0;
+      margin-bottom: 0;
+    }
+
+    .panel-block {
+      &.sortable {
+        cursor: move;
+
+        &:hover {
+          background-color: $light;
+        }
+      }
+    }
+
+    .namespace {
+      flex: 1;
+      margin-right: 0.75em;
+      overflow-x: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .input {
+      flex: 1;
+      margin-right: 0.75em;
+    }
+  }
+}
+
+.is-checkradio {
+  &.is-aligned {
+    &[type='checkbox'],
+    &[type='radio'] {
+      + label {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+.switch {
+  &[type='checkbox'] {
+    + label {
+      display: inline-block;
+    }
+  }
+}
+
+.file-preview {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 100%;
+  position: relative;
+  width: 100%;
+
+  .file-preview-image {
+    background-color: $light;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: transform 200ms ease;
+    width: 100%;
+  }
+
+  .file-preview-link {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    text-indent: -999999px;
+    top: 0;
+    width: 100%;
+  }
+
+  .file-preview-gallery-button {
+    bottom: 0;
+    color: $white;
+    cursor: zoom-in;
+    height: 3rem;
+    position: absolute;
+    right: 0;
+    transition: transform 200ms ease;
+    width: 3rem;
+
+    &:hover {
+      transform: scale(1.2, 1.2);
+    }
+
+    svg {
+      filter: drop-shadow(0 0 1px $black);
+    }
+
+    img {
+      height: 100%;
+      left: 0;
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+  }
+
+  &:hover {
+    .file-preview-image {
+      transform: scale(1.1, 1.1);
+    }
+  }
+}
+
+.gallery-mode-notice {
+  align-items: center;
+  color: $white;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  padding: 90px;
+  width: 100%;
+
+  a {
+    color: inherit;
+    text-decoration: underline;
+  }
+}
+
+.file-detail-image {
+  text-align: center;
+
+  .preview-img-item {
+    cursor: zoom-in;
+    display: block;
+  }
+
+  &.is-restricted-to-viewport {
+    .preview-img-item {
+      max-height: calc(100vh - 3.25rem - 6rem);
+
+      @media (max-width: 1087px) {
+        max-height: calc(100vh - 3.25rem - 6.875rem - 1.5rem);
+      }
+    }
+  }
+}
+
+.file-detail-info {
+  @media (min-width: 1088px) {
+    max-width: 440px;
+  }
+}
+
+.file-detail-controls {
+  height: 2.375rem;
+}
+
+.file-detail-navigation {
+  display: flex;
+
+  .file-detail-navigation-item {
+    margin-left: 1rem;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+.file-detail-tags,
+.file-detail-actions {
+  margin-top: 1.5rem;
+}
+
+.file-detail-tags {
+  li {
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+
+    .file-amount {
+      color: $grey-light;
+    }
+  }
+}
+
+.settings-block {
+  margin-bottom: 1.5rem;
+
+  &.settings-colors {
+    .table {
+      th {
+        &:first-child {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.vue-colorpicker {
+  border-color: $grey-lighter !important;
+}
+
+.vc-chrome {
+  .vc-chrome-sliders {
+    position: relative;
+
+    .vc-chrome-hue-wrap {
+      margin-bottom: 0;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+    }
+
+    .vc-chrome-alpha-wrap {
+      display: none;
+    }
+  }
+
+  .vc-chrome-fields {
+    .vc-input__label {
+      display: none;
+    }
+  }
+
+  .vc-chrome-toggle-btn {
+    display: none;
+  }
+}

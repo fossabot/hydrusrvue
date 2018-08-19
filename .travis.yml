@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+  - stable
+env:
+  global:
+    - VUE_APP_TITLE=hydrusrvue
+    - VUE_APP_DESCRIPTION='A Vue-based frontend for hydrusrv'
+    - VUE_APP_ROBOTS='noindex, nofollow'
+    - VUE_APP_API_URL='https://example.com/api'
+    - VUE_APP_REGISTRATION_ENABLED=true
+    - VUE_APP_MIN_PASSWORD_LENGTH=16
+    - VUE_APP_FALLBACK_FILES_SORTING_NAMESPACE=namespace
+    - VUE_APP_FALLBACK_TAG_COLOR='#3498db'

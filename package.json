@@ -1,0 +1,65 @@
+{
+  "name": "hydrusrvue",
+  "version": "1.0.0",
+  "description": "A Vue-based frontend for hydrusrv",
+  "keywords": [
+    "hydrusrv",
+    "hydrus",
+    "hydrus network",
+    "hydrusnetwork",
+    "booru",
+    "vue",
+    "vuejs",
+    "bulma",
+    "webpack"
+  ],
+  "author": "Michael Serajnik <ms@mserajnik.at>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://mserajnik@github.com/mserajnik/hydrusrvue.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mserajnik/hydrusrvue/issues"
+  },
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build --modern",
+    "lint": "vue-cli-service lint",
+    "test": "yarn build"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.2",
+    "@fortawesome/free-solid-svg-icons": "^5.2.0",
+    "@fortawesome/vue-fontawesome": "^0.1.1",
+    "axios": "^0.18.0",
+    "bulma": "^0.7.1",
+    "bulma-extensions": "^2.2.1",
+    "js-cookie": "^2.2.0",
+    "lodash": "^4.17.10",
+    "plyr": "^3.4.3",
+    "qs": "^6.5.2",
+    "v-hotkey": "^0.2.3",
+    "vue": "^2.5.17",
+    "vue-clickaway": "^2.2.2",
+    "vue-headful": "^2.0.1",
+    "vue-media": "^1.1.1",
+    "vue-pop-colorpicker": "^1.0.2",
+    "vue-router": "^3.0.1",
+    "vue-simple-photoswipe": "^1.0.3",
+    "vuedraggable": "^2.16.0",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.1",
+    "@vue/cli-plugin-eslint": "^3.0.1",
+    "@vue/cli-service": "^3.0.1",
+    "@vue/eslint-config-standard": "^3.0.1",
+    "node-sass": "^4.9.3",
+    "postcss-preset-env": "^5.3.0",
+    "sass-loader": "^7.1.0",
+    "stylelint": "^9.5.0",
+    "stylelint-config-sass-guidelines": "^5.0.0",
+    "vue-template-compiler": "^2.5.17"
+  }
+}
