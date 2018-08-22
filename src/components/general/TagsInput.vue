@@ -34,7 +34,7 @@
             @click.prevent="completePartialTag(suggestion.name)"
             @keyup.enter.prevent="completePartialTag(suggestion.name)">
             {{ suggestion.name }}
-            <small class="file-amount">{{ suggestion.files }}</small>
+            <small class="file-amount">{{ suggestion.fileCount }}</small>
             </a>
         </div>
       </div>

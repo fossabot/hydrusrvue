@@ -17,7 +17,7 @@
           :style="{ color: tag.color }">
           {{ tag.name }}
         </router-link>
-        <small class="file-amount">{{ tag.files }}</small>
+        <small class="file-amount">{{ tag.fileCount }}</small>
       </li>
     </ul>
 
