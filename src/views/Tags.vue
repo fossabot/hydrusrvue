@@ -34,7 +34,7 @@
                 </router-link>
               </td>
               <td>
-                {{ tag.files }}
+                {{ tag.fileCount }}
               </td>
             </tr>
 
@@ -99,7 +99,7 @@ export default {
           color: tagFormatter.getColor(
             name, this.colors
           ),
-          files: tag.files
+          fileCount: tag.fileCount
         })
       }
 

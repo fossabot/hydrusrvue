@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Changed
+
++ Renamed `files` property to `fileCount` to be in line with hydrusrv
+
 ## 1.0.0 - 2018-08-19
 
 ### Added

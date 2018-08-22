@@ -129,7 +129,7 @@ export default {
           path: '/files',
           query: queryFormatter.generateDefaultFilesQuery(name),
           color: tagFormatter.getColor(name, this.colors),
-          files: tag.files
+          fileCount: tag.fileCount
         })
       }
 
