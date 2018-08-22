@@ -32,7 +32,7 @@
             <router-link :to="`/files/${file.id}`" class="file-preview-link">
               View file
             </router-link>
-            <div class="file-preview-gallery-button" v-if="isImage(file.mime)">
+            <div class="file-preview-gallery-button">
               <span class="icon is-large">
                 <font-awesome-icon icon="images" class="fa-2x" />
               </span>
