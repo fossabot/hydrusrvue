@@ -107,12 +107,10 @@ export default {
   data: function () {
     return {
       newPassword: '',
+      minPasswordLength: config.minPasswordLength < 1024
+        ? config.minPasswordLength
+        : 1024,
       currentPassword: ''
-    }
-  },
-  computed: {
-    minPasswordLength: function () {
-      return config.minPasswordLength < 1024 ? config.minPasswordLength : 1024
     }
   },
   methods: {
