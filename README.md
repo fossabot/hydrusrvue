@@ -52,6 +52,7 @@ The most prominent features are:
   + [Develop](#develop)
   + [Build](#build)
   + [Deploy](#deploy)
++ [Demo](#demo) 
 + [Screenshots](#screenshots)
 + [Donate](#donate)
 + [Maintainer](#maintainer)
@@ -146,6 +147,23 @@ user@local:hydrusrvue$ yarn build
 
 After running `yarn build`, copy the content from `dist` to any webspace.
 
+## Demo
+
+You can find a demo installation at
+[https://hydrusrvue.mser.at][hydrusrvue-demo].
+
+Please take note that I am running this installation using
+[hydrusrv-docker][hydrusrv-docker] on a small
+[Vultr Cloud Compute][vultr-cloud-compute] instance with limited performance,
+bandwidth and traffic (meaning the demo could go down until the next month if
+the traffic limit gets exceeded).
+
+It contains only safe for work images tagged with `scenery` (take a look at the
+[screenshots](#screenshots) for some examples).
+
+Registration is enabled, so feel free to create as many users as you would
+like. __Created users are deleted at 12am every day.__
+
 ## Screenshots
 
 ![Frontpage][screenshot-frontpage]
@@ -200,6 +218,9 @@ You are welcome to help out!
 [node-js]: https://nodejs.org/en/
 [yarn]: https://yarnpkg.com/
 [semantic-versioning]: https://semver.org/
+[hydrusrv-docker]: https://github.com/mserajnik/hydrusrv-docker
+[hydrusrvue-demo]: https://hydrusrvue.mser.at
+[vultr-cloud-compute]: https://www.vultr.com/pricing/
 
 [screenshot-frontpage]: https://github.com/mserajnik/hydrusrvue/raw/master/media/screenshot-frontpage.png
 [screenshot-search]: https://github.com/mserajnik/hydrusrvue/raw/master/media/screenshot-search.png
