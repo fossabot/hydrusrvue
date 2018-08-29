@@ -41,6 +41,10 @@ The most prominent features are:
 + Fast delivery due to [lazy loading routes][lazy-loading-routes]
 + Enhanced performance on modern browsers thanks to [Vue CLI][vue-cli]'s
   [modern mode][modern-mode]
++ Basic web app features that allow you to add hydrusrvue to the home screen of
+  your smart device and use it just like a native app
++ Experimental [Electron][electron] support that allows you to built a
+  hydrusrvue desktop app for any major platform
 
 ## Table of contents
 
@@ -52,6 +56,7 @@ The most prominent features are:
   + [Develop](#develop)
   + [Build](#build)
   + [Deploy](#deploy)
+  + [Electron](#electron)
 + [Demo](#demo) 
 + [Screenshots](#screenshots)
 + [Donate](#donate)
@@ -147,6 +152,36 @@ user@local:hydrusrvue$ yarn build
 
 After running `yarn build`, copy the content from `dist` to any webspace.
 
+### Electron
+
+__Disclaimer:__ Electron support is experimental, untested on most platforms
+and might contain application-breaking bugs.
+
+#### Develop
+
+```zsh
+user@local:hydrusrvue$ yarn serve:electron
+```
+
+#### Build
+
+```zsh
+user@local:hydrusrvue$ yarn build:electron
+```
+
+This creates a build for your current platform. You can find the built
+application in `dist_electron`. Take a look at the
+[electron-builder CLI parameters][electron-builder-cli] (the _Building_
+section) to learn how to built for other platforms. You can just attach the
+parameter to the `yarn build:electron` command. E.g., to build for Windows x64:
+
+```zsh
+user@local:hydrusrvue$ yarn build:electron --win --x64
+```
+
+For more elaborate configuration options, take a look at the
+[electron-builder configuration][electron-builder-configuration].
+
 ## Demo
 
 You can find a demo installation at
@@ -215,11 +250,14 @@ You are welcome to help out!
 [lazy-loading-routes]: https://router.vuejs.org/guide/advanced/lazy-loading.html
 [vue-cli]: https://cli.vuejs.org/
 [modern-mode]: https://cli.vuejs.org/guide/browser-compatibility.html#modern-mode
+[electron]: https://electronjs.org/
 [node-js]: https://nodejs.org/en/
 [yarn]: https://yarnpkg.com/
 [semantic-versioning]: https://semver.org/
-[hydrusrv-docker]: https://github.com/mserajnik/hydrusrv-docker
+[electron-builder-cli]: https://www.electron.build/cli
+[electron-builder-configuration]: https://www.electron.build/configuration/configuration#configuration
 [hydrusrvue-demo]: https://hydrusrvue.mser.at
+[hydrusrv-docker]: https://github.com/mserajnik/hydrusrv-docker
 [vultr-cloud-compute]: https://www.vultr.com/pricing/
 
 [screenshot-frontpage]: https://github.com/mserajnik/hydrusrvue/raw/master/media/screenshot-frontpage.png
