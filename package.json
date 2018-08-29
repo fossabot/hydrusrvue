@@ -1,6 +1,6 @@
 {
   "name": "hydrusrvue",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "description": "A Vue-based frontend for hydrusrv",
   "keywords": [
     "hydrusrv",
@@ -11,7 +11,8 @@
     "vue",
     "vuejs",
     "bulma",
-    "webpack"
+    "webpack",
+    "electron"
   ],
   "author": "Michael Serajnik <ms@mserajnik.at>",
   "license": "MIT",
