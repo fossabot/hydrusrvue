@@ -202,6 +202,7 @@ like. __Created users are deleted at 12am every day.__
 ## Screenshots
 
 ![Frontpage][screenshot-frontpage]
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fmserajnik%2Fhydrusrvue.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fmserajnik%2Fhydrusrvue?ref=badge_shield)
 
 ![Searching files with tags][screenshot-search]
 
@@ -274,3 +275,6 @@ You are welcome to help out!
 
 [maintainer]: https://github.com/mserajnik
 [issues]: https://github.com/mserajnik/hydrusrvue/issues/new
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fmserajnik%2Fhydrusrvue.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fmserajnik%2Fhydrusrvue?ref=badge_large)
